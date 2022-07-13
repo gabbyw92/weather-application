@@ -1,0 +1,81 @@
+button {
+  text-align: center;
+}
+form {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+h1 {
+  border: 1px solid #b5b5b7;
+  border-radius: 5px;
+  margin: 20px 35px 20px 35px;
+  padding: 6px 0px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 6px;
+}
+img {
+  max-width: 65%;
+  opacity: 0.68;
+  padding-bottom: 8px;
+}
+.card-title {
+  font-size: 18px;
+  text-decoration: underline;
+}
+.container {
+  text-align: center;
+}
+.current-conditions {
+  border: 1px solid #b5b5b7;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding-bottom: 6px;
+  width: 70%;
+}
+.current-temp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.high-temp {
+  font-size: 18px;
+  font-weight: bold;
+}
+.img-container {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+.location {
+  font-style: italic;
+}
+.low-temp {
+  font-size: 18px;
+  font-weight: bold;
+}
+.row {
+  text-align: center;
+}
+.temp-units {
+  font-size: 16px;
+  text-decoration: none;
+}
+.week-ahead {
+  border: 1px solid #b5b5b7;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  padding: 5px 0px;
+  text-align: center;
+  width: 40%;
+}

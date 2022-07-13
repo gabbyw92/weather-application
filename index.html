@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriella's Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          style="width: 20rem"
+          id="search-input"
+        />
+        <input type="submit" value="Search" />
+      </form>
+      <button id="button">Current Location</button>
+      <div class="row current-conditions">
+        <div class="col">
+          <h1 class="location">Racine, WI</h1>
+          <p id="current-time"></p>
+          <h4>Today</h4>
+          <span class="daytime-weather">🌤</span>
+          <span class="high-temp">73°F</span> /
+          <span class="nighttime-weather">🌙</span>
+          <span class="low-temp">65°F</span>
+        </div>
+        <div class="col">
+          <h4>
+            <u>Currently</u>
+            <span class="temp-units">
+              (<a href="#" class="temp-units" id="celsius">°C</a>
+              |
+              <a href="#" class="temp-units" id="fahrenheit">°F</a>)</span
+            >
+          </h4>
+          <div class="img-container">
+            <img
+              src="media/partially cloudy.jpg"
+              alt="a partially cloudy day"
+            />
+            <div class="current-temp">70°F</div>
+          </div>
+        </div>
+      </div>
+      <p class="week-ahead">
+        The week ahead in
+        <span class="location" id="location">Racine, WI</span>...
+      </p>
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tomorrow</h5>
+              <section class="card-text">
+                <div class="daytime-weather">☀️</div>
+                High:
+                <div class="high-temp">75°F</div>
+                <hr />
+                <div class="nighttime-weather">🌙</div>
+                Low:
+                <div class="low-temp">63°F</div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Monday</h5>
+              <section class="card-text">
+                <div class="daytime-weather">🌤</div>
+                High:
+                <div class="high-temp">70°F</div>
+                <hr />
+                <div class="nighttime-weather">🌧</div>
+                Low:
+                <div class="low-temp">62°F</div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <section class="card-text">
+                <div class="daytime-weather">🌦</div>
+                High:
+                <div class="high-temp">69°F</div>
+                <hr />
+                <div class="nighttime-weather">🌙</div>
+                Low:
+                <div class="low-temp">60°F</div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <section class="card-text">
+                <div class="daytime-weather">☀️</div>
+                High:
+                <div class="high-temp">78°F</div>
+                <hr />
+                <div class="nighttime-weather">💨</div>
+                Low:
+                <div class="low-temp">65°F</div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <section class="card-text">
+                <div class="daytime-weather">☀️</div>
+                High:
+                <div class="high-temp">73°F</div>
+                <hr />
+                <div class="nighttime-weather">🌙</div>
+                Low:
+                <div class="low-temp">64°F</div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <section class="card-text">
+                <div class="daytime-weather">⛈</div>
+                High:
+                <div class="high-temp">68°F</div>
+                <hr />
+                <div class="nighttime-weather">🌨</div>
+                Low:
+                <div class="low-temp">60°F</div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
